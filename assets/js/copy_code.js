@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // create element for copy button in code blocks
 var codeBlocks = document.querySelectorAll('pre');
 codeBlocks.forEach(function (codeBlock) {
@@ -44,3 +45,6 @@ codeBlocks.forEach(function (codeBlock) {
     wrapper.append(copyButton);
   }
 });
+=======
+var codeBlocks=document.querySelectorAll("pre");codeBlocks.forEach(function(e){if(e.querySelector("pre:not(.lineno)")||e.querySelector("code")){var n=document.createElement("button");n.className="copy",n.type="button",n.ariaLabel="Copy code to clipboard",n.innerText="Copy",n.innerHTML='<i class="fas fa-clipboard"></i>',n.addEventListener("click",function(){if(e.querySelector("pre:not(.lineno)"))var r=e.querySelector("pre:not(.lineno)").innerText.trim();else r=e.querySelector("code").innerText.trim();window.navigator.clipboard.writeText(r),n.innerText="Copied",n.innerHTML='<i class="fas fa-clipboard-check"></i>',setTimeout(function(){n.innerText="Copy",n.innerHTML='<i class="fas fa-clipboard"></i>'},3e3)});var r=document.createElement("div");r.className="code-display-wrapper",e.parentElement.insertBefore(r,e),r.append(e),r.append(n)}});
+>>>>>>> 17c3338db7dc10b65255ac87d3c98c88e43a9e86
